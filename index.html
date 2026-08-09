@@ -356,6 +356,20 @@
   .offer-microcopy{
     font-size:0.82rem; opacity:0.75; margin-top:16px; line-height:1.5;
   }
+  .kiwify-upsell-btn{
+    font-size:1.02rem;
+  }
+  .kiwify-upsell-decline{
+    margin-top:16px;
+    cursor:pointer;
+    font-size:0.88rem;
+    color:var(--texto);
+    opacity:0.65;
+    text-decoration:underline;
+    font-family:'Mulish', sans-serif;
+  }
+  .kiwify-upsell-decline:hover{opacity:0.9;}
+
   /* ===== FAQ ===== */
   .faq-item{background:var(--branco-quente); border:1px solid #eadfda; border-radius:10px; margin-bottom:12px; overflow:hidden;}
   .faq-question{
@@ -445,7 +459,7 @@ src="https://www.facebook.com/tr?id=1549781080181761&ev=PageView&noscript=1"
     <h1>Não deixe sua reconstrução parar no terceiro tijolo</h1>
     <p class="sub">Você já começou. O App Neemias foi criado para ajudar você a transformar conhecimento e decisão em prática, organização e acompanhamento diário — o ambiente onde a reconstrução continua.</p>
 
-    <a href="https://pay.kiwify.com.br/92cURPz" class="cta-btn" target="_blank" rel="noopener">Quero Continuar Minha Reconstrução — R$79,99</a>
+    <a href="#oferta" class="cta-btn">Quero Continuar Minha Reconstrução — R$79,99</a>
     <p class="cta-sub">Pagamento único · Acesso por 12 meses · Garantia de 7 dias</p>
 
     <div class="trust-row">
@@ -608,7 +622,7 @@ src="https://www.facebook.com/tr?id=1549781080181761&ev=PageView&noscript=1"
     <span class="kicker">Oferta especial para quem está começando agora</span>
     <h2 class="section-title">Quer continuar a reconstrução?</h2>
     <div class="divider"><span></span></div>
-    <p class="body-text" style="text-align:center; margin-bottom:30px;">Você já recebeu (ou vai receber) 30 dias de acesso ao App Neemias para realizar o Desafio dos 21 Dias junto com o Primeiro Tijolo. Ao ativar esta oferta agora, seus 12 meses de acesso já começam a contar a partir da confirmação do pagamento — sem precisar esperar o período gratuito acabar para decidir.</p>
+    <p class="body-text" style="text-align:center; margin-bottom:30px;">Você já recebeu (ou vai receber) 30 dias de acesso ao App Neemias para realizar o Desafio dos 21 Dias junto com o Primeiro Tijolo. Ao ativar esta oferta agora, você soma mais 12 meses completos a esses 30 dias — quase 13 meses de acesso ao todo, sem precisar decidir de novo depois.</p>
 
     <div class="offer-card">
       <span class="offer-ribbon">App Neemias · Plano Anual</span>
@@ -616,7 +630,7 @@ src="https://www.facebook.com/tr?id=1549781080181761&ev=PageView&noscript=1"
       <span class="offer-plan-pill">Pagamento único · à vista</span>
       <div class="offer-price-old">De R$120,00</div>
       <div class="offer-price-new">R$79,99</div>
-      <p class="offer-price-sub">Acesso completo por 12 meses a partir da confirmação do pagamento — sem mensalidade, sem renovação automática</p>
+      <p class="offer-price-sub">Acesso completo por 12 meses, somados aos seus 30 dias grátis — sem mensalidade, sem renovação automática</p>
       <span class="offer-save">Economize R$40,01</span>
 
       <ul class="offer-benefits">
@@ -631,7 +645,17 @@ src="https://www.facebook.com/tr?id=1549781080181761&ev=PageView&noscript=1"
 
       <p class="decision-phrase">Você já decidiu colocar o primeiro tijolo. Agora pode escolher se quer ter uma ferramenta para continuar colocando os próximos.</p>
 
-      <a href="https://pay.kiwify.com.br/92cURPz" class="cta-btn" target="_blank" rel="noopener">Quero Continuar Minha Reconstrução — R$79,99</a>
+      <!-- ============ OFERTA REAL — SNIPPET OFICIAL KIWIFY (upsell one-click) ============ -->
+      <!-- IDs e o <script src> abaixo são exatamente os fornecidos pela Kiwify para o produto 92cURPz.
+           Não alterar os IDs nem remover o script — é o que faz o botão funcionar (cobra no mesmo
+           cartão/Pix da compra principal, sem levar a pessoa para outra página). Só o texto e o
+           estilo visual dos elementos foram ajustados para casar com o resto da página.
+           data-upsell-url/data-downsell-url ficam em branco propositalmente — servem só para
+           encadear uma PRÓXIMA upsell/downsell depois desta, o que não é o caso aqui. -->
+      <div style="text-align:center" id="kiwify-upsell-92cURPz" data-upsell-url="" data-downsell-url="">
+        <button id="kiwify-upsell-trigger-92cURPz" class="cta-btn kiwify-upsell-btn" type="button">Sim, quero continuar minha reconstrução — R$79,99</button>
+        <div id="kiwify-upsell-cancel-trigger-92cURPz" class="kiwify-upsell-decline">Não, prefiro seguir apenas com os 30 dias grátis por enquanto</div>
+      </div>
 
       <p class="offer-microcopy">Opcional: o App Neemias não é necessário para concluir a compra do Primeiro Tijolo — você pode adquiri-lo separadamente, a qualquer momento. Esta é uma oportunidade para quem já sabe que deseja continuar a jornada dentro do ecossistema Projeto Neemias.</p>
     </div>
@@ -671,7 +695,7 @@ src="https://www.facebook.com/tr?id=1549781080181761&ev=PageView&noscript=1"
           Eu já não recebo 30 dias de acesso ao App junto com o Primeiro Tijolo?
           <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
         </button>
-        <div class="faq-answer"><p>Sim. A oferta de entrada já inclui 30 dias de acesso automático, para realizar o Desafio dos 21 Dias. Se você ativar esta oferta de 12 meses, a contagem anual começa a valer imediatamente a partir da confirmação do pagamento — você não precisa esperar os 30 dias gratuitos acabarem para garantir o ano completo.</p></div>
+        <div class="faq-answer"><p>Sim. A oferta de entrada já inclui 30 dias de acesso automático, para realizar o Desafio dos 21 Dias. Se você ativar esta oferta de 12 meses, eles são somados a esses 30 dias — seu acesso passa a ser de quase 13 meses ao todo, sem perder nada do período gratuito.</p></div>
       </div>
 
       <div class="faq-item">
@@ -695,7 +719,7 @@ src="https://www.facebook.com/tr?id=1549781080181761&ev=PageView&noscript=1"
           Posso continuar depois dos 30 dias grátis sem pagar os 12 meses de uma vez?
           <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
         </button>
-        <div class="faq-answer"><p>Sim. Depois dos 30 dias, quem preferir pode continuar usando o app por R$9,90/mês. Esta oferta existe para quem já sabe que prefere garantir os 12 meses completos por R$79,99 — economia de R$38,81 em relação a 12 meses pagos mês a mês. Se você ativar essa oferta ainda durante os 30 dias grátis, a contagem dos 12 meses já começa a partir da confirmação do pagamento.</p></div>
+        <div class="faq-answer"><p>Sim. Depois dos 30 dias, quem preferir pode continuar usando o app por R$9,90/mês. Esta oferta existe para quem já sabe que prefere garantir os 12 meses completos por R$79,99 — economia de R$38,81 em relação a 12 meses pagos mês a mês. Se você ativar essa oferta ainda durante os 30 dias grátis, os 12 meses são somados ao período gratuito, e não o substituem.</p></div>
       </div>
 
       <div class="faq-item">
@@ -737,7 +761,7 @@ src="https://www.facebook.com/tr?id=1549781080181761&ev=PageView&noscript=1"
   <div class="container">
     <p class="slogan">"Um muro de cada vez. Um tijolo de cada vez."</p>
     <p class="app-reminder">Você não precisa reconstruir tudo hoje. Só precisa decidir qual será o próximo tijolo.</p>
-    <a href="https://pay.kiwify.com.br/92cURPz" class="cta-btn" target="_blank" rel="noopener">Quero Continuar Minha Reconstrução — R$79,99</a>
+    <a href="#oferta" class="cta-btn">Quero Continuar Minha Reconstrução — R$79,99</a>
     <p style="font-size:0.85rem; opacity:0.85; margin-top:14px;">🔒 Risco zero: se não fizer sentido pra você, é só pedir reembolso em até 7 dias.</p>
   </div>
 </section>
@@ -768,15 +792,20 @@ src="https://www.facebook.com/tr?id=1549781080181761&ev=PageView&noscript=1"
     });
   });
 
-  // Meta Pixel: dispara InitiateCheckout ao clicar em qualquer botão de compra
-  document.querySelectorAll('.cta-btn').forEach(function(btn){
-    btn.addEventListener('click', function(){
+  // Meta Pixel: dispara InitiateCheckout apenas no clique real de aceite da oferta
+  // (os outros botões "cta-btn" da página são âncoras que só rolam até #oferta, não uma compra)
+  var upsellTrigger = document.getElementById('kiwify-upsell-trigger-92cURPz');
+  if(upsellTrigger){
+    upsellTrigger.addEventListener('click', function(){
       if(typeof fbq === 'function'){
         fbq('track', 'InitiateCheckout', { value: 79.99, currency: 'BRL' });
       }
     });
-  });
+  }
 </script>
+
+<!-- ============ SNIPPET OFICIAL KIWIFY — UPSELL ONE-CLICK (produto 92cURPz) ============ -->
+<script src="https://snippets.kiwify.com/upsell/upsell.min.js"></script>
 
 </body>
 </html>
